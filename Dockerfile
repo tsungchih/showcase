@@ -14,4 +14,4 @@ ENV JAVA_HOME /usr/java/default
 
 #RUN curl -LO "http://downloads.typesafe.com/akka/akka_$SCALA_VERSION-$AKKA_VERSION.zip"
 
-RUN yum remove -y curl unzip; yum clean all
+RUN yum remove curl unzip; yum clean all
