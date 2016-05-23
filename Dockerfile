@@ -10,4 +10,4 @@ ENV CLASSPATH $CLASSPATH:/opt/akka-$AKKA_VERSION
 COPY AkkaLogParsing.jar /usr/src/showcase/
 
 ENTRYPOINT ["java", "-cp", "/usr/src/showcase/AkkaLogParsing.jar", "AkkaLogParsing.App"]
-CMD ["10.5.20.201:2181,10.5.20.201:2181,10.5.20.203:2181/kafka/brokers/ids", "syslogEvents", "10.5.20.206", "9042"]
+CMD ["10.5.20.204:9772,10.5.20.206:9349,10.5.20.208:9344", "syslogEvents", "10.5.20.206", "9042"]
