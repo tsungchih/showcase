@@ -9,4 +9,4 @@ ADD http://downloads.typesafe.com/akka/akka_$SCALA_VERSION-$AKKA_VERSION.zip /op
 ENV CLASSPATH $CLASSPATH:/opt/akka-$AKKA_VERSION
 COPY AkkaLogParsing.jar /usr/src/showcase/
 
-ENTRYPOINT ["java", "-cp", "/usr/src/showcase/AkkaLogParsing.jar", "AkkaLogParsing.App", "10.5.20.205:9789", "syslogEvents", "10.5.20.204", "9042"]
+ENTRYPOINT ["java", "-cp", "/usr/src/showcase/AkkaLogParsing.jar", "AkkaLogParsing.App", "10.5.20.208:9344", "syslogEvents", "10.5.20.204", "9042"]
