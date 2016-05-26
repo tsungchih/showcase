@@ -12,4 +12,4 @@ COPY AkkaLogParsing.jar /usr/src/showcase/
 EXPOSE 4001
 
 ENTRYPOINT ["java", "-cp", "/usr/src/showcase/AkkaLogParsing.jar", "AkkaLogParsing.App"]
-CMD ["10.5.20.204:9772,10.5.20.206:9349,10.5.20.208:9344", "syslogEvents", "10.5.20.206", "9042"]
+CMD ["10.5.20.204:9772,10.5.20.206:9349,10.5.20.208:9344", "syslogEvents", "10.5.20.206", "9042", "21600"]
